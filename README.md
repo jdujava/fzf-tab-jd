@@ -1,3 +1,10 @@
+My fork of `fzf-tab`.
+
+To set upstream remote to original fzf-tab repo:
+```sh
+git remote add upstream git@github.com:Aloxaf/fzf-tab.git
+```
+
 # fzf-tab
 
 [![CI](https://github.com/Aloxaf/fzf-tab/workflows/ci/badge.svg)](https://github.com/Aloxaf/fzf-tab/actions?query=workflow%3Aci)
