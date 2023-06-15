@@ -15,7 +15,7 @@ zstyle ':fzf-tab:complete:systemctl-*:*' fzf-flags "--preview-window=right:nohid
 zstyle ':fzf-tab:complete:systemctl-*:*' fzf-preview 'SYSTEMD_COLORS=1 systemctl status $word'
 
 zstyle ':fzf-tab:complete:cd:*' fzf-flags "--preview-window=right:nohidden:nowrap"
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -hN --color=always --group-directories-first $realpath' # remember to use single quote here!!!
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'tree -L 1 -C --dirsfirst $realpath' # remember to use single quote here!!!
 
 zstyle ':fzf-tab:complete:(-parameter-|-brace-parameter-|export|unset|expand):*' fzf-flags "--preview-window=right:nohidden:wrap"
 zstyle ':fzf-tab:complete:(-parameter-|-brace-parameter-|export|unset|expand):*' fzf-preview 'echo ${(P)word}'
