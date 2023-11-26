@@ -14,6 +14,9 @@ bindkey '^k' fzf-tab-complete
 zstyle ':fzf-tab:complete:systemctl-*:*' fzf-flags "--preview-window=right:nohidden:wrap"
 zstyle ':fzf-tab:complete:systemctl-*:*' fzf-preview 'SYSTEMD_COLORS=1 systemctl status $word'
 
+zstyle ':fzf-tab:complete:pacman:*' fzf-flags "--preview-window=right:70%:nohidden:nowrap"
+zstyle ':fzf-tab:complete:pacman:*' fzf-preview 'pacman -Qii $word'
+
 zstyle ':fzf-tab:complete:cd:*' fzf-flags "--preview-window=right:nohidden:nowrap"
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'tree -L 1 -C --dirsfirst $realpath' # remember to use single quote here!!!
 
