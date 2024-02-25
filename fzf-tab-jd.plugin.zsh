@@ -3,6 +3,7 @@
 source "${0:A:h}/fzf-tab.zsh"
 
 # fzf-tab settings
+zstyle ':fzf-tab:*' fzf-bindings-default 'tab:down,btab:up,change:top,ctrl-space:toggle'
 zstyle ':fzf-tab:*' default-color $'\033[38m'
 zstyle ':fzf-tab:*' fzf-pad 4
 
